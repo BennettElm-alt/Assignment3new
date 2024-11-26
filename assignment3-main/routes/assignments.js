@@ -1,7 +1,7 @@
 
 const express = require('express');
 const router = express.Router();
-const Assignment = require('../models/Assignment'); // assignment model
+const Assignment = require('../modules/Assignment'); // assignment model
 
 
 // Home show all assignments

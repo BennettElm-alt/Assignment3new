@@ -26,7 +26,7 @@ mongoose.connect(process.env.DB_URI, {
 app.post('/', async (req, res) => {
   try {
     
-    const Task = require('./models/Task'); 
+    const Task = require('Task'); 
     const task = new Task(req.body);
     await task.save();
     res.send(task);
